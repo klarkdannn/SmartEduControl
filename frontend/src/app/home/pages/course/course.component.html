@@ -1,40 +1,11 @@
 <app-container>
-  <h1 class="text-2xl sm:text-3xl text-center mb-6">Доступные предметы</h1>
-
-  <div class="flex overflow-x-auto gap-6 pb-4 scrollbar-hide" style="scroll-snap-type: x mandatory;">
-    
-    <div *ngFor="let subject of allSubjects" 
-         class="min-w-[300px] bg-white shadow-lg border-t-4 border-blue-500 rounded-lg p-5 flex flex-col justify-between"
-         style="scroll-snap-align: start;">
-      
-      <div>
-        <div class="flex justify-between items-start mb-2">
-          <h3 class="font-bold text-xl text-gray-800">{{ subject.name }}</h3>
-          <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">
-            {{ subject.subjectType }}
-          </span>
-        </div>
-        
-        <p class="text-gray-600 text-sm mb-4 line-clamp-3">
-          {{ subject.description || 'Описание отсутствует' }}
-        </p>
-
-        <div class="text-sm text-gray-500">
-          <p><strong>Кредиты:</strong> {{ subject.credits }}</p>
-          <p><strong>Семестр:</strong> {{ subject.semester }}</p>
-        </div>
-      </div>
-
-      <div class="mt-6">
-        <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition">
-          Подробнее
-        </button>
-      </div>
-    </div>
-
-    <div *ngIf="allSubjects.length === 0" class="text-center w-full py-10">
-      <p class="text-gray-400 italic">Предметы еще не добавлены в панели администратора...</p>
-    </div>
-
-  </div>
+  <h1 class="text-2xl sm:text-3xl text-center">Course</h1>
+  <p>
+    Я РАБОТАЮ
+  </p>
+  <p><span class="font-bold">Rector</span>: Ashat Bygildinev </p>
+  <p><span class="font-bold">Email</span>: contact@gmail.com</p>
+  <p>
+    <span class="font-bold">Address</span>:Almaty,Kazakthstan
+  </p>
 </app-container>
