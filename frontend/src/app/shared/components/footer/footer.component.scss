@@ -1,0 +1,32 @@
+.glass-footer {
+  background: rgba(255, 255, 255, 0.2) !important;
+  backdrop-filter: blur(12px);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  color: #1f2937;
+  display: flex;
+  justify-content: center;
+  height: auto;
+  padding: 20px 16px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.copyright-line {
+  font-size: 0.7rem;
+  opacity: 0.6;
+  text-align: center;
+}
